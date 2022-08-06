@@ -16,36 +16,44 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="date">today's date and time in</p>
-            <h1>City</h1>
-            <p>description</p>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-6">
-                <img alt="weather icon" />
-                <span>25 °C | °F</span>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li>Precipitation</li>
-                  <li>Humidity</li>
-                  <li>Wind</li>
-                </ul>
+      <div class="wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col-md-4">
+              <p id="date">today's date and time in</p>
+              <h1>City</h1>
+              <p id="description">description</p>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                    alt="weather icon"
+                  />
+                  <span id="tempWithUnits">
+                    <span id="currTemp">25</span>
+                    <span id="units">°C | °F</span>
+                  </span>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Precipitation</li>
+                    <li>Humidity</li>
+                    <li>Wind</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <footer>
+          <a href="https://github.com/Alleviata/vanilla-weather-app"
+            >Open-source code</a
+          >
+          by Yuliia
+        </footer>
       </div>
-      <footer>
-        <a href="https://github.com/Alleviata/vanilla-weather-app"
-          >Open-source code</a
-        >
-        by Yuliia
-      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>

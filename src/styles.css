@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: linear-gradient(-225deg, #77ffd2 0%, #6297db 48%, #1eecff 100%);
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2c353f;
+  text-align: left;
+}
+
+h1 {
+  margin: 20px 0;
+  line-height: 29px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-bottom: 5px;
+  color: #526984;
+  font-size: 0.8rem;
+  line-height: 20px;
+  list-style: none;
+}
+
+img {
+  margin-right: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: smaller;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 30px;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid white;
+  background: white;
+  border-radius: 5px;
+}
+
+#date,
+#description,
+#tempWithUnits {
+  font-size: 0.9rem;
+}
+
+#currTemp {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+#units {
+  position: relative;
+  font-size: 16px;
+  top: -13px;
+}
