@@ -18,10 +18,27 @@
     <div class="container">
       <div class="wrapper">
         <div class="weather-app">
+          
+            
+            <form id="searchForm" class="mb-4">
+            <div class="row">
+                <div class="col-9">
+              <input
+                type="text"
+                class="form-control"
+                id="city-input"
+                placeholder="Type the city name"
+              />
+              </div>
+              <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary w-100"/>
+              </div>
+            </form>
+          </div>
           <div class="row">
             <div class="col-md-4">
               <p id="date">today's date and time in</p>
-              <h1>City</h1>
+              <h1 id="currCity"></h1>
               <p id="description">description</p>
             </div>
             <div class="col-md-8">
@@ -30,6 +47,7 @@
                   <img
                     src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                     alt="weather icon"
+                    id="icon"
                   />
                   <span id="tempWithUnits">
                     <span id="currTemp">25</span>
@@ -38,9 +56,8 @@
                 </div>
                 <div class="col-md-6">
                   <ul>
-                    <li>Precipitation</li>
-                    <li>Humidity</li>
-                    <li>Wind</li>
+                    <li>Humidity: <span id="currHumidity"></span></li>
+                    <li>Wind: <span id="currWind"></span></li>
                   </ul>
                 </div>
               </div>
