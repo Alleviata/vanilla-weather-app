@@ -100,8 +100,8 @@ function showWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  celsiusUnit.classList.add("active");
-  fahrenUnit.classList.remove("active");
+  //celsiusUnit.classList.add("active");
+  //fahrenUnit.classList.remove("active");
   getForecast(response.data.coord.lat, response.data.coord.lon);
 }
 
@@ -120,7 +120,7 @@ function changeCity(event) {
   search(input.value);
 }
 
-function changeToFahren(event) {
+/*function changeToFahren(event) {
   event.preventDefault();
   let currTemp = document.querySelector("#currTemp");
   celsiusUnit.classList.remove("active");
@@ -137,15 +137,15 @@ function changeToCelcius(event) {
   currTemp.innerHTML = Math.round(celciusTemp);
 }
 
-let celciusTemp = null;
+let celciusTemp = null;*/
 
 let searchForm = document.querySelector("#searchForm");
 searchForm.addEventListener("submit", changeCity);
 
-let celsiusUnit = document.querySelector("#celcius");
+/*let celsiusUnit = document.querySelector("#celcius");
 celsiusUnit.addEventListener("click", changeToCelcius);
 
 let fahrenUnit = document.querySelector("#fahrenheit");
-fahrenUnit.addEventListener("click", changeToFahren);
+fahrenUnit.addEventListener("click", changeToFahren);*/
 
 search("Kyiv");

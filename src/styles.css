@@ -81,17 +81,6 @@ footer {
   top: -13px;
 }
 
-.active {
-  text-decoration: none;
-  cursor: default;
-  color: #2c353f;
-}
-
-.active:hover {
-  cursor: default;
-  color: #2c353f;
-}
-
 .weather-forecast {
   margin-top: 15px;
   text-align: center;

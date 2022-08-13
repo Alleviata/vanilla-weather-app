@@ -11,7 +11,10 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <link href="src/styles.css" rel="stylesheet" />
     <title>vanilla-weather-app</title>
   </head>
@@ -19,23 +22,26 @@
     <div class="container">
       <div class="wrapper">
         <div class="weather-app">
-          
-            
-            <form id="searchForm" class="mb-4">
+          <form id="searchForm" class="mb-4">
             <div class="row">
-                <div class="col-9">
-              <input
-                type="text"
-                class="form-control"
-                id="city-input"
-                placeholder="Type the city name"
-              />
+              <div class="col-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city-input"
+                  placeholder="Type the city name"
+                />
               </div>
               <div class="col-3">
-              <input type="submit" value="Search" class="btn btn-primary w-100"/>
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
+
           <div class="row">
             <div class="col-md-4">
               <p id="date">today's date and time in</p>
@@ -52,7 +58,7 @@
                   />
                   <span id="tempWithUnits">
                     <span id="currTemp">25</span>
-                    <span id="units"><a href="#" id="celcius" class="active">°C</a> | <a href="#" id="fahrenheit">°F</a></span>
+                    <span id="units">°C</span>
                   </span>
                 </div>
                 <div class="col-md-6">
@@ -64,18 +70,16 @@
               </div>
             </div>
           </div>
-          <div class="weather-forecast" id="forecast">
-          
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-        </div>
-        
+
         <footer>
           <a href="https://github.com/Alleviata/vanilla-weather-app"
             >Open-source code</a
           >
           by Yuliia
         </footer>
-        </div>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
