@@ -88,3 +88,29 @@ footer {
   cursor: default;
   color: #2c353f;
 }
+
+.weather-forecast {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.forecast-date {
+  font-size: 1.3rem;
+}
+
+.forecast-temp {
+  color: #2c353f;
+  font-size: 0.9rem;
+}
+
+.single-forecast {
+  padding: 7px;
+  border: 1px solid #1eecff;
+  box-shadow: 0 8px 6px -6px black;
+  background: white;
+  border-radius: 10px;
+}
+
+.forecast-temp-min {
+  opacity: 0.6;
+}
