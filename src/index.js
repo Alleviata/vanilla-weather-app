@@ -91,6 +91,27 @@ function changeToCelcius(event) {
   currTemp.innerHTML = Math.round(celciusTemp);
 }
 
+function multiplyForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row seven-cols">`;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-md-1 single-forecast">
+              <div class="forecast-date">${day}</div>
+              <img 
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="weather icon"/>
+              <div class="forecast-temp">
+                <span class="forecast-temp-max">25°C </span><span class="forecast-temp-min">20°C</span></div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+multiplyForecast();
+
 let celciusTemp = null;
 
 let searchForm = document.querySelector("#searchForm");

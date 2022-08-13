@@ -49,7 +49,7 @@ footer {
 }
 
 .wrapper {
-  max-width: 700px;
+  max-width: 800px;
   margin: 30px;
 }
 
@@ -64,6 +64,10 @@ footer {
 #description,
 #tempWithUnits {
   font-size: 0.9rem;
+}
+
+#description {
+  font-style: italic;
 }
 
 #currTemp {
@@ -104,7 +108,8 @@ footer {
 }
 
 .single-forecast {
-  padding: 7px;
+  margin: 5px;
+  padding: 7px 0px;
   border: 1px solid #1eecff;
   box-shadow: 0 8px 6px -6px black;
   background: white;
@@ -113,4 +118,23 @@ footer {
 
 .forecast-temp-min {
   opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    display: inline-block;
+    width: 25%;
+    *width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 13%;
+    *width: 13%;
+  }
 }
